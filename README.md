@@ -34,7 +34,7 @@ A step by step series of examples that tell you have to get a development env ru
 Clone this repository:
 
 ```
-git clone https://github.com/qazi-ejaz/Supplychain-Blockchain.git
+git clone https://github.com/qazi-ejaz/Blockchain-Supplychain.git
 ```
 
 Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
