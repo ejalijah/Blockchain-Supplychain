@@ -52,7 +52,7 @@ ganache-cli -m "spirit supply whale amount human item harsh scare congress disco
 
 Your terminal should look something like this:
 
-![truffle test](images/ganache-cli.png)
+![truffle test](images/ganache-cli.gif)
 
 In a separate terminal window, Compile smart contracts:
 
@@ -62,7 +62,7 @@ truffle compile
 
 Your terminal should look something like this:
 
-![truffle test](images/truffle_compile.png)
+![truffle test](images/truffle_compile.gif)
 
 This will create the smart contract artifacts in folder ```build\contracts```.
 
@@ -84,7 +84,7 @@ truffle test
 
 All 10 tests should pass.
 
-![truffle test](images/truffle_test.png)
+![truffle test](images/truffle_test.gif)
 
 In a separate terminal window, launch the DApp:
 
