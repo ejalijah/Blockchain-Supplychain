@@ -19,6 +19,12 @@ The DApp User Interface when running should look like...
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+#### UML Diagrams
+
+![UML](UML/Activity_Diagram.png)
+![UML](UML/Sequence_Diagram.png)
+![UML](UML/Data_Model_Diagram.png)
+
 #### Prerequisites
 
 Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
