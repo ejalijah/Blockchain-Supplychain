@@ -44,7 +44,7 @@ contract('SupplyChain', function (accounts) {
     // 1st Test
     it("Testing smart contract function harvestItem() that allows a farmer to harvest coffee", async () => {
         const supplyChain = await SupplyChain.deployed()
-
+        await supplyChain.addFarmer(originFarmerID);
         // Declare and Initialize a variable for event
         var eventEmitted = false;
 
@@ -150,6 +150,7 @@ contract('SupplyChain', function (accounts) {
         const supplyChain = await SupplyChain.deployed();
 
         // Declare and Initialize a variable for event
+        await supplyChain.addDistributor(distributorID);
         var eventEmitted = false;
 
         // Watch the emitted event Sold()
@@ -158,7 +159,7 @@ contract('SupplyChain', function (accounts) {
         })
 
         // Mark an item as Sold by calling function buyItem()
-        await supplyChain.buyItem(upc, { from: distributorID, value: web3.utils.toWei("1", "ether") });
+        await supplyChain.buyItem(upc, { from: distributorID, value:productPrice });
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
         const resultBufferOne = await supplyChain.fetchItemBufferOne.call(upc);
@@ -201,6 +202,7 @@ contract('SupplyChain', function (accounts) {
         const supplyChain = await SupplyChain.deployed()
 
         // Declare and Initialize a variable for event
+        await supplyChain.addRetailer(retailerID);
         var eventEmitted = false
 
         // Watch the emitted event Received()
@@ -227,6 +229,7 @@ contract('SupplyChain', function (accounts) {
         const supplyChain = await SupplyChain.deployed()
 
         // Declare and Initialize a variable for event
+
         var eventEmitted = false
 
         // Watch the emitted event Purchased()
