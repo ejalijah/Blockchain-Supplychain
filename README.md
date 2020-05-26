@@ -24,6 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 ![UML](UML/Activity_Diagram.png)
 ![UML](UML/Sequence_Diagram.png)
 ![UML](UML/Data_Model_Diagram.png)
+![UML](UML/State_Diagram.png)
 
 #### Prerequisites
 
